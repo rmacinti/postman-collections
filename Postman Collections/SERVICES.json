@@ -1249,7 +1249,7 @@
               "mode": "raw",
               "raw": "{\r\n   \"username\": \"eolsadmin\",\r\n   \"password\": \"testing1\"\r\n}"
             },
-            "url": "{{url}}/login-service/login"
+            "url": "{{url}}/login-service/logins"
           },
           "response": [
             {
