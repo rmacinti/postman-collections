@@ -4202,13 +4202,9 @@
               "raw": "{\n  \"consumerKey\":\"keycanvas123\",\n  \"consumerSecret\":\"secret\"\n}"
             },
             "url": {
-              "raw": "https://authgateway-{{env}}.apps.els-ols.com/oauth/header/keycanvas?url=https%3A%2F%2Fcanvas.instructure.com",
-              "protocol": "https",
+              "raw": "{{url}}/oauth/header/keycanvas?url=https%3A%2F%2Fcanvas.instructure.com",
               "host": [
-                "authgateway-{{env}}",
-                "apps",
-                "els-ols",
-                "com"
+                "{{url}}"
               ],
               "path": [
                 "oauth",
