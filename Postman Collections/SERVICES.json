@@ -258,11 +258,11 @@
             {
               "listen": "test",
               "script": {
-                "id": "43556588-5292-42ac-b6aa-ad3444a2edf3",
+                "id": "3c49001a-7467-4c48-862c-d4b02d178bcd",
                 "type": "text/javascript",
                 "exec": [
-                  "pm.test(\"Response time is less than 1s\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                  "pm.test(\"Response time is less than 5s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
                   "});",
                   "",
                   "if(responseCode.code === 200) {",
