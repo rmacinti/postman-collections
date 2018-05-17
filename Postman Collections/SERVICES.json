@@ -221,11 +221,11 @@
             {
               "listen": "test",
               "script": {
-                "id": "30d56619-fc6f-4025-b063-0577578294f1",
+                "id": "0f0dbfc9-010c-45c7-a8c0-609adbe6c906",
                 "type": "text/javascript",
                 "exec": [
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "pm.test(\"Response time is less than 1s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
                   "});",
                   "",
                   "pm.test(\"Status code is 200\", function () {",
