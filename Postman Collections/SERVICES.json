@@ -183,11 +183,11 @@
             {
               "listen": "test",
               "script": {
-                "id": "bf3812d6-8e23-46c1-8ab6-e8d60f4b6222",
+                "id": "33a7d765-6f9c-4f0b-a02b-03a1e8a7b0ba",
                 "type": "text/javascript",
                 "exec": [
-                  "pm.test(\"Response time is less than 1s\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                  "pm.test(\"Response time is less than 5s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
                   "});",
                   "",
                   "if(responseCode.code === 200) {",
