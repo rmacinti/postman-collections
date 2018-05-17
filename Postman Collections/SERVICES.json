@@ -146,11 +146,11 @@
             {
               "listen": "test",
               "script": {
-                "id": "eb3c421e-bbfe-4f36-b254-7dfae6b7051f",
+                "id": "becadfff-7b70-4cd0-8511-7913c72b0500",
                 "type": "text/javascript",
                 "exec": [
-                  "pm.test(\"Response time is less than 300ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(300);",
+                  "pm.test(\"Response time is less than 1s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
                   "});",
                   "",
                   "pm.test(\"Status code is 201\", function () {",
