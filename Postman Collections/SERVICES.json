@@ -4840,33 +4840,33 @@
             {
               "listen": "test",
               "script": {
-                "id": "97f2b5e9-41f9-4213-bea5-1989ae8ef35f",
+                "id": "2711951b-79a7-4895-b9eb-ed9b222e27cb",
                 "type": "text/javascript",
                 "exec": [
                   "tests[\"Status code is 200\"] = responseCode.code === 200;",
                   "if(responseCode.code === 200){",
                   "    var jsonData = JSON.parse(responseBody);",
-                  "    pm.test('Has time', function() {",
-                  "        pm.expect(jsonData).to.have.property('time');",
-                  "    });",
-                  "    pm.test('Has epoch', function() {",
-                  "        pm.expect(jsonData).to.have.property('epoch');",
-                  "    });",
+                  "    tests[\"username is eolsadmin\"] = \"eolsadmin\" === jsonData.username",
+                  "    tests[\"role is Adm\"] = \"Adm\" === jsonData.role",
+                  "    tests[\"\"]",
                   "}"
                 ]
               }
             }
           ],
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [
               {
                 "key": "Authorization",
                 "value": "Bearer {{token}}"
               }
             ],
-            "body": {},
-            "url": "{{url}}/time"
+            "body": {
+              "mode": "raw",
+              "raw": "{{token}}"
+            },
+            "url": "{{url}}/token-service/validate"
           },
           "response": []
         }
