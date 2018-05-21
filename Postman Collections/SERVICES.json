@@ -4676,11 +4676,37 @@
         {
           "_postman_id": "00e5c9ca-0e26-4eec-b645-a0c64a3db229",
           "name": "getTime",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "1aa19b66-3473-43e3-9de0-a55618c682cf",
+                "type": "text/javascript",
+                "exec": [
+                  "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                  "if(responseCode.code === 200){",
+                  "    var jsonData = JSON.parse(responseBody);",
+                  "    pm.test('Has time', function() {",
+                  "        pm.expect(jsonData).to.have.property('time');",
+                  "    });",
+                  "    pm.test('Has epoc', function() {",
+                  "        pm.expect(jsonData).to.have.property('epoc');",
+                  "    });",
+                  "}"
+                ]
+              }
+            }
+          ],
           "request": {
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
             "body": {},
-            "url": ""
+            "url": "{{url}}/time"
           },
           "response": []
         }
