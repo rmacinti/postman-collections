@@ -4567,6 +4567,122 @@
             "url": ""
           },
           "response": []
+        },
+        {
+          "_postman_id": "0da9d4d9-b5de-4250-b6ae-62e6cc45d286",
+          "name": "getTokenByAdminLogin",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "c6404c1e-85da-43ef-a558-c74e8c963bbe",
+                "type": "text/javascript",
+                "exec": [
+                  "console.log(request.name);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "68836d4c-835a-490c-a201-db5fabdecd4b",
+                "type": "text/javascript",
+                "exec": [
+                  "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                  "if(responseCode.code === 200){",
+                  "    var jsonData = JSON.parse(responseBody);",
+                  "    postman.setEnvironmentVariable(\"token\",jsonData.token);",
+                  "    console.log(\"Request Name: \" + request.name);",
+                  "    console.log(\"Response time in ms: \" + responseTime);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"username\": \"eolsadmin\",\r\n   \"password\": \"testing1\"\r\n}"
+            },
+            "url": "{{url}}/login-service/login"
+          },
+          "response": [
+            {
+              "id": "4f4dc34a-ddab-4dee-bde9-c12d94a1acec",
+              "name": "token",
+              "originalRequest": {
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": ""
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "description": "",
+                  "key": "Access-Control-Allow-Credentials",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"
+                },
+                {
+                  "description": "",
+                  "key": "Connection",
+                  "name": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "description": "",
+                  "key": "Content-Length",
+                  "name": "Content-Length",
+                  "value": "645"
+                },
+                {
+                  "description": "",
+                  "key": "Content-Type",
+                  "name": "Content-Type",
+                  "value": "application/json;charset=UTF-8"
+                },
+                {
+                  "description": "",
+                  "key": "Date",
+                  "name": "Date",
+                  "value": "Fri, 21 Apr 2017 15:29:10 GMT"
+                },
+                {
+                  "description": "",
+                  "key": "Server",
+                  "name": "Server",
+                  "value": "nginx/1.10.3"
+                },
+                {
+                  "description": "",
+                  "key": "X-Application-Context",
+                  "name": "X-Application-Context",
+                  "value": "eols-api-gateway-server:qa:8080"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlb2xzYWRtaW4iLCJ1c2VyIjp7InVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxJZCI6bnVsbCwidXNlcm5hbWUiOiJlb2xzYWRtaW4iLCJmaXJzdE5hbWUiOm51bGwsImxhc3ROYW1lIjpudWxsLCJyb2xlIjoiQWRtIiwiZXhwaXJlRGF0ZSI6MTQ5Mjc5MjE1MDc4Niwic2Vzc2lvbklkIjoiNmJlZTdkZGQtYmFlOC00MDJhLWExMWUtMDRlNWViM2NhNzVjIiwiZW1haWxBZGRyZXNzIjpudWxsLCJyb2xlcyI6W10sImFwcFBhcmFtcyI6e319LCJpc3MiOiJlb2xzIiwianRpIjoiNzA2ODU3NzQtYjcxNi00YTM0LWIxMDctZWZjZmNkMWRkMTZmIiwiaWF0IjoxNDkyNzg4NTUwLCJuYmYiOjE0OTI3ODg1NTAsImV4cCI6MTQ5Mjc5MjE1MH0.7-BAIMlP8WCid3uGA9RS_oTpX4MEDnPxREvqMjn6FtFtgyGblBjIM-3_itqrC5V582mADWTnDw6mWS1EwMGzPA\",\"expireDate\":1492792150786,\"cookies\":null}"
+            }
+          ]
         }
       ]
     }
