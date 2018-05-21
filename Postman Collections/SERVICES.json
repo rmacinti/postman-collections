@@ -4558,17 +4558,6 @@
       "description": "",
       "item": [
         {
-          "_postman_id": "00e5c9ca-0e26-4eec-b645-a0c64a3db229",
-          "name": "getTime",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": ""
-          },
-          "response": []
-        },
-        {
           "_postman_id": "0da9d4d9-b5de-4250-b6ae-62e6cc45d286",
           "name": "getTokenByAdminLogin",
           "event": [
@@ -4683,6 +4672,17 @@
               "body": "{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlb2xzYWRtaW4iLCJ1c2VyIjp7InVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxJZCI6bnVsbCwidXNlcm5hbWUiOiJlb2xzYWRtaW4iLCJmaXJzdE5hbWUiOm51bGwsImxhc3ROYW1lIjpudWxsLCJyb2xlIjoiQWRtIiwiZXhwaXJlRGF0ZSI6MTQ5Mjc5MjE1MDc4Niwic2Vzc2lvbklkIjoiNmJlZTdkZGQtYmFlOC00MDJhLWExMWUtMDRlNWViM2NhNzVjIiwiZW1haWxBZGRyZXNzIjpudWxsLCJyb2xlcyI6W10sImFwcFBhcmFtcyI6e319LCJpc3MiOiJlb2xzIiwianRpIjoiNzA2ODU3NzQtYjcxNi00YTM0LWIxMDctZWZjZmNkMWRkMTZmIiwiaWF0IjoxNDkyNzg4NTUwLCJuYmYiOjE0OTI3ODg1NTAsImV4cCI6MTQ5Mjc5MjE1MH0.7-BAIMlP8WCid3uGA9RS_oTpX4MEDnPxREvqMjn6FtFtgyGblBjIM-3_itqrC5V582mADWTnDw6mWS1EwMGzPA\",\"expireDate\":1492792150786,\"cookies\":null}"
             }
           ]
+        },
+        {
+          "_postman_id": "00e5c9ca-0e26-4eec-b645-a0c64a3db229",
+          "name": "getTime",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": ""
+          },
+          "response": []
         }
       ]
     }
