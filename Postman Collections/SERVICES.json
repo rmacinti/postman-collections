@@ -4841,7 +4841,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "2711951b-79a7-4895-b9eb-ed9b222e27cb",
+                "id": "1993deac-5af1-4169-939e-ba0c85ec30e3",
                 "type": "text/javascript",
                 "exec": [
                   "tests[\"Status code is 200\"] = responseCode.code === 200;",
@@ -4849,7 +4849,7 @@
                   "    var jsonData = JSON.parse(responseBody);",
                   "    tests[\"username is eolsadmin\"] = \"eolsadmin\" === jsonData.username",
                   "    tests[\"role is Adm\"] = \"Adm\" === jsonData.role",
-                  "    tests[\"\"]",
+                  "    tests[\"check expireDate\"] = pm.variables.get(\"expireDate\").parseInt() === jsonData.expireDate",
                   "}"
                 ]
               }
