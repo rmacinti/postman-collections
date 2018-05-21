@@ -4832,6 +4832,43 @@
               "body": "{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlb2xzYWRtaW4iLCJ1c2VyIjp7InVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxJZCI6bnVsbCwidXNlcm5hbWUiOiJlb2xzYWRtaW4iLCJmaXJzdE5hbWUiOm51bGwsImxhc3ROYW1lIjpudWxsLCJyb2xlIjoiQWRtIiwiZXhwaXJlRGF0ZSI6MTQ5Mjc5MjE1MDc4Niwic2Vzc2lvbklkIjoiNmJlZTdkZGQtYmFlOC00MDJhLWExMWUtMDRlNWViM2NhNzVjIiwiZW1haWxBZGRyZXNzIjpudWxsLCJyb2xlcyI6W10sImFwcFBhcmFtcyI6e319LCJpc3MiOiJlb2xzIiwianRpIjoiNzA2ODU3NzQtYjcxNi00YTM0LWIxMDctZWZjZmNkMWRkMTZmIiwiaWF0IjoxNDkyNzg4NTUwLCJuYmYiOjE0OTI3ODg1NTAsImV4cCI6MTQ5Mjc5MjE1MH0.7-BAIMlP8WCid3uGA9RS_oTpX4MEDnPxREvqMjn6FtFtgyGblBjIM-3_itqrC5V582mADWTnDw6mWS1EwMGzPA\",\"expireDate\":1492792150786,\"cookies\":null}"
             }
           ]
+        },
+        {
+          "_postman_id": "92a4b146-aef1-457d-90ce-770d9b6bbb3b",
+          "name": "getTime",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "97f2b5e9-41f9-4213-bea5-1989ae8ef35f",
+                "type": "text/javascript",
+                "exec": [
+                  "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                  "if(responseCode.code === 200){",
+                  "    var jsonData = JSON.parse(responseBody);",
+                  "    pm.test('Has time', function() {",
+                  "        pm.expect(jsonData).to.have.property('time');",
+                  "    });",
+                  "    pm.test('Has epoch', function() {",
+                  "        pm.expect(jsonData).to.have.property('epoch');",
+                  "    });",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {},
+            "url": "{{url}}/time"
+          },
+          "response": []
         }
       ]
     }
