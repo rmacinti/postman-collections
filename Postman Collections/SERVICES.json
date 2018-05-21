@@ -4734,13 +4734,14 @@
             {
               "listen": "test",
               "script": {
-                "id": "68836d4c-835a-490c-a201-db5fabdecd4b",
+                "id": "cbb7ff9d-43b4-4d81-940d-092cca173f47",
                 "type": "text/javascript",
                 "exec": [
                   "tests[\"Status code is 200\"] = responseCode.code === 200;",
                   "if(responseCode.code === 200){",
                   "    var jsonData = JSON.parse(responseBody);",
                   "    postman.setEnvironmentVariable(\"token\",jsonData.token);",
+                  "    postman.setEnvironmentVariable(\"expireDate\",jsonData.expireDate);",
                   "    console.log(\"Request Name: \" + request.name);",
                   "    console.log(\"Response time in ms: \" + responseTime);",
                   "}"
