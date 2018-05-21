@@ -3752,51 +3752,6 @@
       ]
     },
     {
-      "_postman_id": "17987749-4780-4500-957e-a550294c284f",
-      "name": "eols-oauth2-service",
-      "description": "",
-      "item": [
-        {
-          "_postman_id": "3b288474-8c27-40f7-8870-67fcdfded986",
-          "name": "getToken",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "a26c7fb7-740f-4c7c-872f-650f092f8b2f",
-                "type": "text/javascript",
-                "exec": [
-                  "tests[\"Status code is 200\"] = responseCode.code === 200;",
-                  "",
-                  "tests[\"Response time is less than 500ms\"] = responseTime < 500;",
-                  "",
-                  "console.log(\"Response time in ms: \" + responseTime);",
-                  "",
-                  "var jsonData = JSON.parse(responseBody);",
-                  "postman.setEnvironmentVariable(\"token\",jsonData.access_token);"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/x-www-form-urlencoded"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "grant_type=client_credentials&client_id=devas95668b-5adfdc-b93a0-b4dfa-778cb3466dev&client_secret=devsecret"
-            },
-            "url": "{{url}}/oauth2/token"
-          },
-          "response": []
-        }
-      ]
-    },
-    {
       "_postman_id": "cc7c274e-1b7e-4f37-ba11-00cc95cf84f1",
       "name": "eols-api-gateway-service",
       "description": "",
@@ -4112,6 +4067,51 @@
               "raw": "{{token}}"
             },
             "url": "{{url}}/token-service/validate"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "17987749-4780-4500-957e-a550294c284f",
+      "name": "eols-oauth2-service",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3b288474-8c27-40f7-8870-67fcdfded986",
+          "name": "getToken",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a26c7fb7-740f-4c7c-872f-650f092f8b2f",
+                "type": "text/javascript",
+                "exec": [
+                  "tests[\"Status code is 200\"] = responseCode.code === 200;",
+                  "",
+                  "tests[\"Response time is less than 500ms\"] = responseTime < 500;",
+                  "",
+                  "console.log(\"Response time in ms: \" + responseTime);",
+                  "",
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"token\",jsonData.access_token);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "grant_type=client_credentials&client_id=devas95668b-5adfdc-b93a0-b4dfa-778cb3466dev&client_secret=devsecret"
+            },
+            "url": "{{url}}/oauth2/token"
           },
           "response": []
         }
