@@ -346,7 +346,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "e91caf24-b593-4eb9-8710-40171e039ed0",
+                "id": "68836d4c-835a-490c-a201-db5fabdecd4b",
                 "type": "text/javascript",
                 "exec": [
                   "tests[\"Status code is 200\"] = responseCode.code === 200;",
