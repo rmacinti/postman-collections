@@ -4680,7 +4680,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "1aa19b66-3473-43e3-9de0-a55618c682cf",
+                "id": "97f2b5e9-41f9-4213-bea5-1989ae8ef35f",
                 "type": "text/javascript",
                 "exec": [
                   "tests[\"Status code is 200\"] = responseCode.code === 200;",
@@ -4689,8 +4689,8 @@
                   "    pm.test('Has time', function() {",
                   "        pm.expect(jsonData).to.have.property('time');",
                   "    });",
-                  "    pm.test('Has epoc', function() {",
-                  "        pm.expect(jsonData).to.have.property('epoc');",
+                  "    pm.test('Has epoch', function() {",
+                  "        pm.expect(jsonData).to.have.property('epoch');",
                   "    });",
                   "}"
                 ]
