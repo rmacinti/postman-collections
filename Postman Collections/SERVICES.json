@@ -4711,6 +4711,12 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "a456d99a-478e-42f5-9756-60c7c759450e",
+      "name": "eols-authgateway-router",
+      "description": "",
+      "item": []
     }
   ]
 }
