@@ -3027,7 +3027,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"emailAddress\": \"{{userGuid}}@user.com\",\n  \"externalId\": \"user_{{userGuid}}\",\n  \"type\": \"Stu\",\n  \"lmsExternalId\": \"lmsUser_{{userGuid}}\",\n  \"username\": \"user_{{userGuid}}\"\n}"
+              "raw": "{\n  \"emailAddress\": \"{{userGuid}}@user.com\",\n  \"externalId\": \"user_{{userGuid}}\",\n  \"type\": \"Ins\",\n  \"lmsExternalId\": \"lmsUser_{{userGuid}}\",\n  \"username\": \"user_{{userGuid}}\"\n}"
             },
             "url": "{{url}}/api/eolsUser/user"
           },
