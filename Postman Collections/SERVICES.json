@@ -3702,6 +3702,12 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "af1f53aa-8b86-4576-97a3-a55557d92218",
+      "name": "get token",
+      "description": "",
+      "item": []
     }
   ]
 }
