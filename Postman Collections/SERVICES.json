@@ -6,6 +6,12 @@
   },
   "item": [
     {
+      "_postman_id": "af1f53aa-8b86-4576-97a3-a55557d92218",
+      "name": "get token",
+      "description": "",
+      "item": []
+    },
+    {
       "_postman_id": "bb22a5b2-a93f-4611-8fb3-ac576462484e",
       "name": "eols-features-service",
       "description": null,
@@ -3702,12 +3708,6 @@
           "response": []
         }
       ]
-    },
-    {
-      "_postman_id": "af1f53aa-8b86-4576-97a3-a55557d92218",
-      "name": "get token",
-      "description": "",
-      "item": []
     }
   ]
 }
