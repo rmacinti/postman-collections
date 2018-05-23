@@ -9,12 +9,6 @@
       "_postman_id": "af1f53aa-8b86-4576-97a3-a55557d92218",
       "name": "get token",
       "description": "",
-      "item": []
-    },
-    {
-      "_postman_id": "bb22a5b2-a93f-4611-8fb3-ac576462484e",
-      "name": "eols-features-service",
-      "description": null,
       "item": [
         {
           "_postman_id": "9c61ba09-0cae-4a3b-b553-058497e50f40",
@@ -131,7 +125,14 @@
               "body": "{\"token\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlb2xzYWRtaW4iLCJ1c2VyIjp7InVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxJZCI6bnVsbCwidXNlcm5hbWUiOiJlb2xzYWRtaW4iLCJmaXJzdE5hbWUiOm51bGwsImxhc3ROYW1lIjpudWxsLCJyb2xlIjoiQWRtIiwiZXhwaXJlRGF0ZSI6MTQ5Mjc5MjE1MDc4Niwic2Vzc2lvbklkIjoiNmJlZTdkZGQtYmFlOC00MDJhLWExMWUtMDRlNWViM2NhNzVjIiwiZW1haWxBZGRyZXNzIjpudWxsLCJyb2xlcyI6W10sImFwcFBhcmFtcyI6e319LCJpc3MiOiJlb2xzIiwianRpIjoiNzA2ODU3NzQtYjcxNi00YTM0LWIxMDctZWZjZmNkMWRkMTZmIiwiaWF0IjoxNDkyNzg4NTUwLCJuYmYiOjE0OTI3ODg1NTAsImV4cCI6MTQ5Mjc5MjE1MH0.7-BAIMlP8WCid3uGA9RS_oTpX4MEDnPxREvqMjn6FtFtgyGblBjIM-3_itqrC5V582mADWTnDw6mWS1EwMGzPA\",\"expireDate\":1492792150786,\"cookies\":null}"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "_postman_id": "bb22a5b2-a93f-4611-8fb3-ac576462484e",
+      "name": "eols-features-service",
+      "description": null,
+      "item": [
         {
           "_postman_id": "4a060823-0172-4679-b39a-7ef9d5705bd9",
           "name": "postFeature",
