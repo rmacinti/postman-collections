@@ -2127,6 +2127,17 @@
             "url": "{{url}}/time"
           },
           "response": []
+        },
+        {
+          "_postman_id": "c100e1ec-0093-440f-ab45-7176e43a7b7e",
+          "name": "createExistingEolsStudent",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": ""
+          },
+          "response": []
         }
       ]
     },
