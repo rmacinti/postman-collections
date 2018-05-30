@@ -726,7 +726,7 @@
         },
         {
           "_postman_id": "cee2db24-b7b2-496d-a6b8-f22a4c3eb3f0",
-          "name": "getBook Copy",
+          "name": "getBookAllEID",
           "event": [
             {
               "listen": "test",
