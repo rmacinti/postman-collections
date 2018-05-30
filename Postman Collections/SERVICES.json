@@ -609,7 +609,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/bookxmlir/book/clearCache"
+            "url": "{{url}}/bookxmlir/book/generic/getImage"
           },
           "response": []
         }
