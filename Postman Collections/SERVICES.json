@@ -726,6 +726,12 @@
       ]
     },
     {
+      "_postman_id": "186e4983-33f6-4195-9b26-32cbd58a7ac3",
+      "name": "eols-token-service",
+      "description": "",
+      "item": []
+    },
+    {
       "_postman_id": "c7e93e1f-2e47-4cd9-9d6f-9171baaa791d",
       "name": "eols-assessment-service",
       "description": null,
@@ -2387,12 +2393,6 @@
           "response": []
         }
       ]
-    },
-    {
-      "_postman_id": "186e4983-33f6-4195-9b26-32cbd58a7ac3",
-      "name": "eols-token-service",
-      "description": "",
-      "item": []
     }
   ]
 }
