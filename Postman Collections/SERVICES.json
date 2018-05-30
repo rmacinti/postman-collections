@@ -494,7 +494,7 @@
         },
         {
           "_postman_id": "a0b841cb-791b-44ad-b43b-2cac1ae0617c",
-          "name": "deleteFeature Copy",
+          "name": "deleteFeatureGroup",
           "event": [
             {
               "listen": "test",
