@@ -387,7 +387,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "d303833a-c17e-4a47-b7d1-62d0ac896853",
+                "id": "f776728f-3bf0-4486-b234-75d905925468",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Response time is less than 5s\", function () {",
@@ -396,6 +396,8 @@
                   "",
                   "if(responseCode.code === 200) {",
                   "    var jsonData = JSON.parse(responseBody);",
+                  "    tests[\"feature value is false\"] = jsonData.eolsApp === \"FEATURE_APP\";",
+                  "    tests[\"feature value is false\"] = jsonData.featureName === \"FEATURE_KEY\";",
                   "    tests[\"feature value is false\"] = jsonData.featureValue === \"false\";",
                   "    tests[\"feature value is false\"] = jsonData.group === \"FEATURE_GRP\";",
                   "}"
