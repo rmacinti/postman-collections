@@ -686,43 +686,6 @@
             "url": "{{url}}/bookxmlir/book/view/generic/readingtime"
           },
           "response": []
-        },
-        {
-          "_postman_id": "3566e1f5-99f8-4ec4-b2a1-03c4f7dd7ebc",
-          "name": "getBook",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "7c4a993f-7209-434e-8d24-45f1c232e323",
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Response time is less than 300ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(300);",
-                  "});",
-                  "",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "{{url}}/bookxmlir/book/{{id}}"
-          },
-          "response": []
         }
       ],
       "event": [
