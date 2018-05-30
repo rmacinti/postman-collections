@@ -387,7 +387,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "6ef4867d-f02b-4bf6-bb2d-6eb747761ec1",
+                "id": "d179ac4e-8ffc-4fd0-99a6-5b2209c9e65b",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Response time is less than 5s\", function () {",
@@ -399,7 +399,7 @@
                   "    tests[\"eolsApp is FEATURE_APP\"] = jsonData.eolsApp === \"FEATURE_APP\";",
                   "    tests[\"featureName is FEATURE_KEY\"] = jsonData.featureName === \"FEATURE_KEY\";",
                   "    tests[\"featureValue is false\"] = jsonData.featureValue === \"false\";",
-                  "    tests[\"group is FEATURE_GRP\"] = jsonData.group === \"FEATURE_GRP\";",
+                  "    tests[\"group is FEATURE_GRP \"] = jsonData.group === \"FEATURE_GRP\";",
                   "}"
                 ]
               }
