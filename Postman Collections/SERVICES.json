@@ -328,6 +328,56 @@
             "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
           },
           "response": []
+        },
+        {
+          "_postman_id": "18ad330b-aa4c-4d49-8e02-ccd1bc6752fa",
+          "name": "postFeature Copy",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "84f0f070-b5c2-441a-b6f1-f3e45bdeb300",
+                "type": "text/javascript",
+                "exec": [
+                  "console.log(request.name);",
+                  "var randomNumber = Math.floor(Math.random()*9999999);",
+                  "postman.setEnvironmentVariable(\"appname\", \"FEATURE_APP\");",
+                  "postman.setEnvironmentVariable(\"keyname\", \"FEATURE_KEY\");"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "dbc8c616-57b7-4366-89b4-b31b00dc8db1",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Response time is less than 5s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
+                  "});",
+                  "",
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "false"
+            },
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+          },
+          "response": []
         }
       ]
     },
