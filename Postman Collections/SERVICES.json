@@ -735,7 +735,12 @@
           "name": "createTokenFromRequest",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
             "body": {},
             "url": "{{url}}/token-service"
           },
