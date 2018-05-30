@@ -416,6 +416,43 @@
             "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
           },
           "response": []
+        },
+        {
+          "_postman_id": "5a18bdd0-ba40-48f4-924c-b6d9eaf3655e",
+          "name": "putFeature Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8d984062-8857-48fb-bcb9-718897d9e9b9",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Response time is less than 5s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
+                  "});",
+                  "",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "true"
+            },
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+          },
+          "response": []
         }
       ]
     },
