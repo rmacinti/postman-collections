@@ -541,7 +541,7 @@
       "item": [
         {
           "_postman_id": "e9126e9a-957c-4740-8cea-349e0d300cb9",
-          "name": "book_xml_server",
+          "name": "clearCache",
           "event": [
             {
               "listen": "test",
