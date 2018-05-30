@@ -649,43 +649,6 @@
             "url": "{{url}}/bookxmlir/book/view/generic/content"
           },
           "response": []
-        },
-        {
-          "_postman_id": "7246e3cf-a0d2-464f-9658-26fe4c594006",
-          "name": "viewGenericReadingTime",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "6b99fec4-4cbb-4e65-aa62-46fdc87dd7b8",
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Response time is less than 300ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(300);",
-                  "});",
-                  "",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "{{url}}/bookxmlir/book/view/generic/readingtime"
-          },
-          "response": []
         }
       ],
       "event": [
