@@ -689,7 +689,7 @@
         },
         {
           "_postman_id": "3566e1f5-99f8-4ec4-b2a1-03c4f7dd7ebc",
-          "name": "viewGenericReadingTime Copy",
+          "name": "getBook",
           "event": [
             {
               "listen": "test",
