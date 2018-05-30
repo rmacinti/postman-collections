@@ -331,7 +331,7 @@
         },
         {
           "_postman_id": "18ad330b-aa4c-4d49-8e02-ccd1bc6752fa",
-          "name": "postFeature Copy",
+          "name": "postFeatureGroup",
           "event": [
             {
               "listen": "prerequest",
@@ -478,6 +478,39 @@
           ],
           "request": {
             "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "a0b841cb-791b-44ad-b43b-2cac1ae0617c",
+          "name": "deleteFeature Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8c1089a5-abea-4078-bc67-b0e6458d711b",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 204\", function () {",
+                  "    pm.response.to.have.status(204);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
             "header": [
               {
                 "key": "Authorization",
