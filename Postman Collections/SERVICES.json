@@ -381,7 +381,7 @@
         },
         {
           "_postman_id": "68a2069f-6c09-42fb-8552-59272937f32b",
-          "name": "getFeature Copy",
+          "name": "getFeatureGroup",
           "event": [
             {
               "listen": "test",
