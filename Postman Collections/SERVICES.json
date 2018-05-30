@@ -757,7 +757,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/bookxmlir/book/{{id}}"
+            "url": "{{url}}/bookxmlir/book/{{id}}/eid"
           },
           "response": []
         }
