@@ -336,14 +336,14 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "d778029f-a1d5-4a81-8e46-1155bfb97175",
+                "id": "cc0db2b4-19e0-45f8-b1f0-48bfa10b3068",
                 "type": "text/javascript",
                 "exec": [
                   "console.log(request.name);",
                   "var randomNumber = Math.floor(Math.random()*9999999);",
                   "postman.setEnvironmentVariable(\"appname\", \"FEATURE_APP\");",
                   "postman.setEnvironmentVariable(\"keyname\", \"FEATURE_KEY\");",
-                  "postman.setEnvironmentVariable(\"groupname\", \"FEATURE_KEY\");"
+                  "postman.setEnvironmentVariable(\"groupname\", \"FEATURE_GRP\");"
                 ]
               }
             },
