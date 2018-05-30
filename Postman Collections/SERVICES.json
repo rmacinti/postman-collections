@@ -387,7 +387,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "f776728f-3bf0-4486-b234-75d905925468",
+                "id": "6ef4867d-f02b-4bf6-bb2d-6eb747761ec1",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Response time is less than 5s\", function () {",
@@ -396,10 +396,10 @@
                   "",
                   "if(responseCode.code === 200) {",
                   "    var jsonData = JSON.parse(responseBody);",
-                  "    tests[\"feature value is false\"] = jsonData.eolsApp === \"FEATURE_APP\";",
-                  "    tests[\"feature value is false\"] = jsonData.featureName === \"FEATURE_KEY\";",
-                  "    tests[\"feature value is false\"] = jsonData.featureValue === \"false\";",
-                  "    tests[\"feature value is false\"] = jsonData.group === \"FEATURE_GRP\";",
+                  "    tests[\"eolsApp is FEATURE_APP\"] = jsonData.eolsApp === \"FEATURE_APP\";",
+                  "    tests[\"featureName is FEATURE_KEY\"] = jsonData.featureName === \"FEATURE_KEY\";",
+                  "    tests[\"featureValue is false\"] = jsonData.featureValue === \"false\";",
+                  "    tests[\"group is FEATURE_GRP\"] = jsonData.group === \"FEATURE_GRP\";",
                   "}"
                 ]
               }
