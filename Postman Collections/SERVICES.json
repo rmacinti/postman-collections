@@ -378,6 +378,44 @@
             "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
           },
           "response": []
+        },
+        {
+          "_postman_id": "68a2069f-6c09-42fb-8552-59272937f32b",
+          "name": "getFeature Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "33a7d765-6f9c-4f0b-a02b-03a1e8a7b0ba",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Response time is less than 5s\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
+                  "});",
+                  "",
+                  "if(responseCode.code === 200) {",
+                  "    var jsonData = JSON.parse(responseBody);",
+                  "    tests[\"feature value is false\"] = jsonData.featureValue === \"false\";",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+          },
+          "response": []
         }
       ]
     },
