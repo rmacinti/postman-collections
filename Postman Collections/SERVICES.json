@@ -489,7 +489,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}/group/{{groupname}}"
           },
           "response": []
         },
