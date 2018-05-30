@@ -419,7 +419,7 @@
         },
         {
           "_postman_id": "5a18bdd0-ba40-48f4-924c-b6d9eaf3655e",
-          "name": "putFeature Copy",
+          "name": "putFeatureGroup",
           "event": [
             {
               "listen": "test",
