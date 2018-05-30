@@ -652,7 +652,7 @@
         },
         {
           "_postman_id": "7246e3cf-a0d2-464f-9658-26fe4c594006",
-          "name": "viewGenericContent Copy",
+          "name": "viewGenericReadingTime",
           "event": [
             {
               "listen": "test",
