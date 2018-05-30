@@ -734,10 +734,10 @@
           "_postman_id": "a8514ce2-10e8-4fca-b462-22980e7eb498",
           "name": "createTokenFromRequest",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
             "body": {},
-            "url": ""
+            "url": "{{url}}/token-service"
           },
           "response": []
         }
