@@ -683,7 +683,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/bookxmlir/book/generic/getImage"
+            "url": "{{url}}/bookxmlir/book/view/generic/readingtime"
           },
           "response": []
         }
