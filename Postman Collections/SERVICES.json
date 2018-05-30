@@ -336,13 +336,14 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "84f0f070-b5c2-441a-b6f1-f3e45bdeb300",
+                "id": "d778029f-a1d5-4a81-8e46-1155bfb97175",
                 "type": "text/javascript",
                 "exec": [
                   "console.log(request.name);",
                   "var randomNumber = Math.floor(Math.random()*9999999);",
                   "postman.setEnvironmentVariable(\"appname\", \"FEATURE_APP\");",
-                  "postman.setEnvironmentVariable(\"keyname\", \"FEATURE_KEY\");"
+                  "postman.setEnvironmentVariable(\"keyname\", \"FEATURE_KEY\");",
+                  "postman.setEnvironmentVariable(\"groupname\", \"FEATURE_KEY\");"
                 ]
               }
             },
@@ -375,7 +376,7 @@
               "mode": "raw",
               "raw": "false"
             },
-            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}"
+            "url": "{{url}}/api/features/app/{{appname}}/key/{{keyname}}/group/{{groupname}}"
           },
           "response": []
         },
