@@ -578,7 +578,7 @@
         },
         {
           "_postman_id": "334d051e-d944-4daa-8dae-1a4fcdd5c555",
-          "name": "clearCache Copy",
+          "name": "viewGenericGetImage",
           "event": [
             {
               "listen": "test",
