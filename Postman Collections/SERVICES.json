@@ -265,7 +265,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "3c49001a-7467-4c48-862c-d4b02d178bcd",
+                "id": "2475660a-9947-47ce-ae67-af10915676c8",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Response time is less than 5s\", function () {",
@@ -275,6 +275,7 @@
                   "if(responseCode.code === 200) {",
                   "    var jsonData = JSON.parse(responseBody);",
                   "    tests[\"feature value is true\"] = jsonData.featureValue === \"true\";",
+                  "    console.log(jsonData.featureValue)",
                   "} "
                 ]
               }
